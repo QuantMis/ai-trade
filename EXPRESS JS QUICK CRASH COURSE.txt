@@ -1,0 +1,54 @@
+NodeJS API using express framework
+
+DATABASE
+- connect to mongodb 
+- connect to specific database
+- migrate collection from model to db (npm run dev)
+
+ENVIRONMENT VARIABLE
+- what is process.env (object store environment variable, which can be override)
+- try using dotenv concept (use dotenv to get database url)
+
+- achieve this by (npm install dotenv)
+- NODE_ENV
+
+MODEL
+- using mongoose to declare document schema
+- to implement extra method to model (like django.save())
+
+ROUTER
+- routes directory (export all router object in some files)
+- mapping and controller are linked directly
+using express router
+
+INTERACTING WITH MODEL
+- using mongoose (act like an orm, eloquent in laravel term)
+
+## QUICK TIPS
+- model & db related all use mongoose 
+- mongoose, router
+- dont get confuse between mongoose interface (built in query) and model interface (custom)
+- mongoose interface (related to model) will return model with the model interface
+
+	in express (node)
+	var user = mongoose.model('User') # this is the getter part
+					  # setter part declared in model directory
+
+	in django
+	
+	assume user model have custom interface (method) calculate user ytd age
+	user = User.objects.filter(..) => filter method is django object method
+	user_age_ytd = user.get_age() => get age is user class method
+
+	in laravel
+	User::where => where is eloquent method
+	HAHA laravel dont have one
+
+- mongose use promise pattern alot get used to it
+- mongose method to get data (getAll, find, findById)
+- utilize mongose modelSchema interface method 
+	- this refer to current object
+
+	
+
+
