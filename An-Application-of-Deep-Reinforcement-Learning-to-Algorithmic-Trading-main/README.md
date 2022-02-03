@@ -1,10 +1,3 @@
-# An Application of Deep Reinforcement Learning to Algorithmic Trading
-Experimental code supporting the results presented in the scientific research paper:
-> Thibaut Théate and Damien Ernst. "An Application of Deep Reinforcement Learning to Algorithmic Trading." (2020).
-> [[arxiv]](https://arxiv.org/abs/2004.06627)
-
-
-
 # Dependencies
 
 The dependencies are listed in the text file "requirements.txt":
